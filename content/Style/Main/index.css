@@ -1,0 +1,560 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    cursor: url("../../Imgs/Header/38_Tunaaa.png"), default !important;
+    /* عشان استخدم صوره للماوس لازم تكون 
+    50 px width and hight */
+}
+
+#lood
+  {
+      background-image: url("../../Imgs/Looder/giphywhales.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+        background-position: center center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+     
+  }
+  
+  ::-webkit-scrollbar 
+  {
+      width: 20px;
+  }
+    ::-webkit-scrollbar-track 
+  {
+          box-shadow: inset 0 0 5px grey;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+}  
+    ::-webkit-scrollbar-thumb 
+  {
+      background-color: lightblue;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+}
+  
+  
+    ::-webkit-scrollbar-thumb:hover
+  {
+      background: #3586ff; 
+  }
+/* carousel */
+.carousel-img
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(../../Imgs/Body-img/carousel-img4.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+.carousel-img2
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url(../../Imgs/Body-img/carousel-img2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+.carousel-img3
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../../Imgs/Body-img/carousel-img3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+.owl-dots
+{
+    display: none;
+    
+}
+li
+{
+    white-space: nowrap !important;
+}
+nav
+{
+    z-index: 11;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.navbar-brand img 
+{
+    position: relative;
+    animation: fishmove 1s ease-in infinite;
+    -webkit-animation: fishmove 1s ease-in infinite;
+}
+
+@keyframes fishmove
+{
+    0% {top: 0px; left: 0px;}
+    50% {top: 0px;left: 10px;}
+    100% {top: 0px;  left: 0px;}
+   
+}
+.nav-link:hover
+{
+    color: rgb(89, 192, 226) !important;
+}
+.owl-prev
+{
+    position: absolute;
+    top: 50%;
+    right: 93%;
+    width: 40px;
+    height: 40px;
+    color: lightblue !important;
+    font-size: 50px !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;   
+    border: 3px solid lightblue!important;
+}
+.owl-next
+{
+    position: absolute;
+    top: 50%;
+    left: 93%;
+    width: 40px;
+    height: 40px;
+    color: lightblue !important;
+    font-size: 50px !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;   
+    border: 3px solid lightblue!important;
+}
+.owl-next span
+{
+    position: absolute;
+    bottom: -40%;
+    left: 30%;
+}
+.owl-prev span
+{
+    position: absolute;
+    bottom: -40%;
+    left: 20%;
+}
+.navbar-brand img 
+{
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.head-cont
+{
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        z-index: 11;
+}
+
+/* This part Media */
+
+
+
+@media (max-width:320px)
+{
+    .head-cont 
+    {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        z-index: 11;
+        font-size: small ;
+        
+    }
+    .owl-next
+    {
+        visibility: hidden;
+    }
+    .owl-prev
+    {
+        visibility: hidden;
+    }
+}
+
+
+
+@media (max-width:375px)
+{
+    .head-cont 
+    {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        z-index: 11;
+        font-size: small ;
+        
+    }
+    .owl-next
+    {
+        visibility: hidden;
+    }
+    .owl-prev
+    {
+        visibility: hidden;
+    }
+}
+
+
+
+@media (max-width:425px)
+{
+    .head-cont 
+    {
+        position: absolute;
+        top: 50%;
+        left: 7%;
+        z-index: 11;
+        font-size: small ;
+        
+    }
+    .owl-next
+    {
+        visibility: hidden;
+    }
+    .owl-prev
+    {
+        visibility: hidden;
+    }
+}
+
+.cardover
+{
+        transition: all 1s !important;
+        -webkit-transition: all 1s !important;
+        -moz-transition: all 1s !important;
+        -ms-transition: all 1s !important;
+        -o-transition: all 1s !important;
+}
+/* New Part Product */
+.cardover:hover
+{
+   
+    box-shadow: 10px 10px 10px 10px lightblue !important; 
+}
+
+
+
+/* New Part */
+.col-md-4 {
+  text-align: center;
+  padding-bottom: 50px;
+  border-right: 1px dashed black;
+}
+
+.col-md-4:last-child {
+  border-right: 0px solid black;
+}
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+i{
+  font-size: 20px !important;
+}
+
+@media (max-width: 991px) {
+  .col-md-4 {
+    border-right: 0px dashed black;
+    border-bottom: 1px dashed black;
+    width: 100%;
+    margin: auto auto;
+  }
+  
+  .col-md-4:last-child {
+    border-bottom: 0px dashed black;
+  }
+}
+:root {
+    --padding-h: 5vw;
+    --padding-v: 2rem;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section {
+    padding: var(--padding-v) var(--padding-h);
+}
+
+.portfolio .portfolio-cats {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.portfolio .portfolio-cats li {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.portfolio .portfolio-gallery {
+    position: relative;
+}
+
+.portfolio .portfolio-item {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.7s;
+}
+
+.portfolio .portfolio-item .item-inner {
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0px rgb(0 0 0 / 10%);
+}
+
+@media screen and (min-width: 48em) {
+    .portfolio .portfolio-item {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 62em) {
+    .portfolio .portfolio-item {
+        width: 33.3333%;
+    }
+}
+
+.OcheanBtn
+{
+    background-color: rgb(117,146,166) !important;
+}
+
+.bg-img
+{
+    background-image: url(../../Imgs/Body-img/ezgif.com-gif-maker.webp);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+/* New Part */
+.col-6 ul li
+{
+    padding: 10px;
+}
+.error
+{
+    color: rgb(117,146,166);
+    
+}
+.fa-play
+{
+    position: fixed;
+    right: 1%;
+    bottom: 4%;
+    color: rgb(52,153,202);
+    font-size: 35px;
+    padding: 5px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+     cursor: auto;
+}
+@media (max-width:636px)
+{
+    .owl-prev , .owl-next
+    {
+       display: none !important;
+    }
+}
+.bgimge
+{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../../Imgs/Body-img/wooden-board-empty-table-front-blue-sea-sky-background-perspective-wood-floor-sea-sky-can-be-used-display-montage-your-products-beach-summer-concepts_1253-804.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.bgimge .card 
+{
+    padding: 50px 0px;
+}
+
+footer
+{
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    background-color: #3586ff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+footer ul 
+{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+
+}
+footer ul li a
+{
+    font-size: 25px;
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+footer ul li a:hover
+{
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    color: white;
+}
+footer .wave
+{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(../../Imgs/Footer/wave.png);
+    background-size: 1000px 100px;
+}
+footer .wave#wave1
+{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: aimatewave 4s linear infinite;
+    -webkit-animation: aimatewave 4s linear infinite;
+}
+footer .wave#wave2
+{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: aimatewave2 4s linear infinite;
+    -webkit-animation: aimatewave2 4s linear infinite;
+}
+
+footer .wave#wave3
+{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: aimatewave 4s linear infinite;
+    -webkit-animation: aimatewave 3s linear infinite;
+}
+footer .wave#wave4
+{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 10px;
+    animation: aimatewave2 4s linear infinite;
+    -webkit-animation: aimatewave2 4s linear infinite;
+}
+@keyframes aimatewave
+{
+    0%
+    {
+        background-position-x: 1000px;
+    }    
+    100%
+    {
+        background-position-x: 0px;
+    }    
+}
+@keyframes aimatewave2
+{
+    0%
+    {
+        background-position-x: 0px;
+    }    
+    100%
+    {
+        background-position-x: 1000px;
+    }    
+}
+#minusindex ,footer
+{
+    z-index: 0 !important;
+    /* اوعي تقرر تاني تدي اندكس بسالب  لاي حاجه فيها انميشن */
+    
+}
+.svg-inline--fa
+{
+    z-index: 1;
+}
+.heder-index
+{
+  z-index: 2;
+   
+}

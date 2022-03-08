@@ -1,0 +1,25 @@
+.section1
+{
+ background-image: url(../../Imgs/Menu/Food-Web-Banner-01.jpg);   
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+}
+.section2
+{
+ background-image: url(../../Imgs/Menu/Food-Social-Media-Banner-18.jpg);   
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+}
+.section3
+{
+ background-image: url(../../Imgs/Menu/Food-Web-Banner-3.jpg);   
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+}
+span
+{
+    background-color: red !important;
+}
